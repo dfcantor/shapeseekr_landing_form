@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fitness Bot Sign-up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+    <h1 id='title'>Fitness Bot Waitlist Signup</h1>
+    <p id='description'>You can sign-up to our waitlist here! <br> We are excited to help you achieve your fitness goals! </p>
+
+    <div class='form-block'>
+      <form id='survey-form'>
+        
+        <div class='input-group'>
+          <label for='name' id='name-label'>Name </label> 
+          <input id='name'placeholder='Enter your name' type='text' required/> 
+        </div>
+
+        <div class='input-group'>
+          <label for='email' id='email-label'>Email </label>
+          <input id='email' placeholder='Enter your email' type='email' required />
+        </div>
+
+        <div class='input-group'>
+          <label for='number' id='number-label'>Age<label class='optional'>(optional)</label> </label>
+          <input id='number' placeholder='Age' type='number' max="99" min="14" required />
+        </div>
+
+        <div class='input-group'>
+          <label for='dropdown' >What is your current fitness level? </label>
+          <select id="dropdown" name="dropdown">
+            <option value="">Select an option</option>
+            <option value="1">I have not started to train yet</option>
+            <option value="2">Beginner (0-2 years)</option>
+            <option value="3">Intermediate (2-6 years)</option>
+            <option value="4">Advanced (6+ years)</option>
+          </select>
+        </div>
+
+        <div class='input-group'>
+          <label for='dropdown' >How do you plan your training sessions?</label>
+          
+        <br>
+        <br> 
+        <label for="self" class='training-options'>
+          <input id="self" type="radio" name="training-type" value="self"/> 
+          I train for myself 
+        </label>
+        
+        
+        <label for="internet" class='training-options'>
+          <input id="internet" type="radio" name="training-type" value="internet"/>
+          I found a routine program on the internet
+        </label>
+        
+
+        <label for="personal-trainer" class='training-options'>
+          <input id="personal-trainer" type="radio" name="training-type" value="personal-trainer"/>
+          I hired a personal trainer
+        </label>
+
+        <label for="generic-gym-app" class='training-options'>
+          <input id="generic-gym-app" type="radio" name="training-type" value="generic-gym-app"/>
+          I use my gym's app workout plans
+        </label>
+        
+        </div>
+        <br>
+        
+        <div class='input-group'>
+          <label>What are your goals and objectives?</label>
+          <br>
+          <label class='max-chars'>(max 1200 chars) </label>
+          <br>
+          <textarea placeholder='Example: I would like to feel better with my body...' maxlength="1200"></textarea> 
+        </div> 
+
+        <div class='input-group'>
+          <hr>
+          <br> 
+        <label for="newsletter" class='training-options'>
+          <input id="newsletter" type="checkbox" name="training-terms" value="newsletter"/> 
+          I want to subscribe to FitBot's Newsletter 
+        </label>
+        
+        
+        <label for="discharge1" class='training-options'>
+          <input id="discharge1" type="checkbox" name="training-terms" value="discharge1" required/>
+          I accept that Fit Bot is not responsible for injuries in the user or third parties during the routines suggested by the app. 
+        </label>
+        
+
+        <label for="discharge2" class='training-options'>
+          <input id="discharge2" type="checkbox" name="training-terms" value="discharge2" required/>
+          I accept that the information provided by this app is for general informational purposes only and is not intended as a substitute for professional medical advice, diagnosis, or treatment.  
+        </label>
+
+        <label for="responsible-use" class='training-options'>
+          <input id="responsible-use" type="checkbox" name="training-terms" value="responsible-use" required/>
+          I accept to use the app responsibly by not spamming the bot and using it only for personal purposes, otherwise accepting the denial of service from the application due to usage terms violation.  
+        </label>
+        </div>
+
+       <input type="submit" value="Submit" id='submit'/>
+
+      </form> 
+    </div>
+  </body>
+</html>
